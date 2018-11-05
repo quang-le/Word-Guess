@@ -1,0 +1,93 @@
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+$footer-padding: 0.7rem 1rem 1rem !default;
+$footer-background-color:#F7F3FF !default;
+$dimensions: 16 24 32 48 64 96 128 256 512;
+
+
+
+@import '../../node_modules/bulma/bulma';
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs');
+@font-face{
+    font-family: "SFFedoraShadow";
+    src:url("../fonts/SF Fedora Shadow.ttf");
+}
+@font-face{
+    font-family: "SFFedoraOutline";
+    src:url("../fonts/SF Fedora Outline.ttf");
+}
+@font-face{
+    font-family: "SFFedora";
+    src:url("../fonts/SF Fedora.ttf");
+}
+@font-face{
+    font-family: "Prototype";
+    src:url("../fonts/Prototype.ttf");
+}
+
+section{
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+#start{
+    width:33%;
+}
+#startWrap{
+    padding-top:30px;
+}
+
+.footer{
+    padding:$footer-padding;
+    background-color:black;
+    font-family:'Mouse Memoirs', sans-serif;
+    outline: 1px solid black;
+    color: white;
+}
+#mainTitle{
+    font-family: 'SFFedora','Mouse Memoirs', sans-serif;
+    font-size: 5rem;
+    color:#FF3D16;
+    text-shadow: -1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black,1px 1px 0 black, -10px 10px 0 #FFC609;
+    @media screen and (max-width:765px){
+        font-size: 3rem;
+    }
+}
+
+input{
+    margin-right: 1rem;
+    margin-left: 5px;
+}
+body, button{
+    font-family:'Prototype', sans-serif;
+}
+
+body{
+    background-color:$footer-background-color;
+}
+.hero{
+    background-image: linear-gradient(to right, #E87A09, #E84708);
+}
+#scenario{
+    text-align: justify;
+    width:35%;
+    margin-left: 15px;
+    margin-right: 15px;
+    @media screen and (max-width:765px){
+        width:100%;
+    }
+}
+
+#raptout{
+    margin-top: 30px;
+}
+
+#inputWrapper{
+    height:3rem;
+}
+
+
+

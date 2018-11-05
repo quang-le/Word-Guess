@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="./node_modules/bulma/css/bulma.css" rel="stylesheet" type="text/css">-->
+    <title>Jeu pendu</title>
+</head>
+<body>
+    <header class="hero is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" id="mainTitle">Die Panzerknacker Geheimnes Code</h1>
+            </div>
+        </div>
+    </header>
+    <section id="intro" class="section level">
+        <div class="level-item">
+            <figure class="image is-256x256">
+                <img id="raptout" src="./assets/images/Panzerknacker.png">
+            </figure>
+        </div>
+        <p class="level-item" id="scenario">Die Panzerknacker willen Onkel Dagoberts geld stielen. Sie haben eine super moderne Maschine gebaut. Herr Düsentrieb kan die Maschine ausschalten aber er braucht den geheimnes Code von die Panzerknacker. Hilfe Trick, Tripp und Trapp den Code finden bevor die Panzerknacker wieder zu Hause kommen!</p>
+       <!--<div class="container has-text-centered" id="startWrap">
+            <button class="button" name="start" id="start">Spielen!</button>
+        </div>-->
+        <div class="level-item">
+            <figure class="image is-256x256">
+                <img  src="./assets/images/TrickundTrapp.png">
+            </figure>
+        </div>
+    </section>
+    <section id="inputArea" class="section level">
+        <div class="level-item has-text-centered" id="inputWrapper">
+            <label for="lettre">Welche Buchstab : </label><input type="text" name="lettre" id="lettre"/>
+            <button class="button" name="btn" id="btn">Bestätigen</button>
+        </div>
+    </section>
+    <section class="section level">
+        <p class="level-item has-text-centered" id="solution">Lösung: </p>
+        <p class="level-item has-text-centered" id="wrongGuesses">Falsche Buchstaben:  </p>
+        <p class="level-item has-text-centered" id="allGuesses">Alle Buchstaben:  </p>
+    </section>
+    <footer class="footer has-text-centered">Design by MrSheep Games - 2018</footer>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="main.js" type="module"></script>
+    <script src="api.js" type="module"></script>
+</body>
+</html>
