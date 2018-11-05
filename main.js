@@ -1,7 +1,14 @@
-import {apiKey} from './api.js';
-// import guessLetter from './gameplay.js';
+//import {apiKey} from './api.js';
+const config = {
+    apiKey: "AIzaSyAXrCrNyA8NRwX8rny2elo4uGx678r2qSw",
+    authDomain: "game-liam.firebaseapp.com",
+    databaseURL: "https://game-liam.firebaseio.com",
+    projectId: "game-liam",
+    storageBucket: "game-liam.appspot.com",
+    messagingSenderId: "68625347190"
+  };
 
-firebase.initializeApp(apiKey);
+firebase.initializeApp(config);
 const database=firebase.database();
 
 var allRefs= database.ref('words/');
