@@ -85,7 +85,7 @@ function guessLetter(){
 
         let guess=document.getElementById("lettre").value.toUpperCase();
         if (guess.length>1){
-            return alert("Bitte nur eine Buchstab eindrucken")
+            return alert("Bitte nur eine Buchstabe eindrucken")
         }
         if (wrongGuesses.includes(guess)==true || guesses.includes(guess)==true){
             console.log("double essai");
@@ -127,7 +127,7 @@ function guessLetter(){
     function checkComplete(){
         if(solution.join()==answer.join()){
             document.getElementById("lettre").value="";
-            return alert("Super! Der Passwort war "+answer.join(""));
+            return alert("Super! Das Passwort ist... "+answer.join(""));
             
         }
         else{  
