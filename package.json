@@ -10,7 +10,8 @@
     "firebase": "^5.5.7",
     "node-sass": "^4.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  "fstream: ">=1.0.12"},
   "scripts": {
     "start": "npm run -all --parallel css-watch js-watch",
     "css-build": "node-sass _sass/main.scss css/main.css",
